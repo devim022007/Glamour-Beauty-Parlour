@@ -4,9 +4,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #fff;
 }
-
 /* Navbar */
-
 .navbar {
     background: #111 !important;
 }
@@ -35,20 +33,25 @@ body {
     color: #ff69b4 !important;
 }
 
-
 /* Hero Section */
-
 .hero {
     height: 90vh;
-    background: url("../Images/beauty.jpeg");
+    background-image: url("../Images/beauty.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center center;
 }
-/* Feature Box */
 
+@media (max-width: 768px) {
+    .hero {
+        height: 45vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* Feature Box */
 .feature-box {
     background: #111;
     color: white;
@@ -61,7 +64,6 @@ body {
 }
 
 /* Service Banner */
-
 .service-banner {
     height: 280px;
     background: url("../Images/banner.jpeg");
@@ -96,7 +98,6 @@ body {
 }
 
 /* Services */
-
 .services {
     background: #fdf7f9;
     padding: 80px 0;
@@ -230,18 +231,19 @@ body {
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
+
 .filter-btn {
-    background-color:white;
-    color:#e91e63;
-    border:1px solid #e91e63;
-    padding:10px 25px;
-    border-radius:25px;
+    background-color: white;
+    color: #e91e63;
+    border: 1px solid #e91e63;
+    padding: 10px 25px;
+    border-radius: 25px;
 }
 
 .filter-btn:hover,
-.filter-btn.active{
-    background:#e91e63;
-    color:white;
+.filter-btn.active {
+    background: #e91e63;
+    color: white;
 }
 
 /* Gallery Images */
@@ -403,9 +405,10 @@ body {
     transition: all 0.3s ease;
 }
 
-.icon-link:hover{
+.icon-link:hover {
     transform: scale(1.1);
 }
+
 /* Bottom Footer */
 .footer-bottom {
     background-color: #111;
@@ -417,36 +420,31 @@ body {
     color: #ccc;
     font-size: 14px;
 }
-
 .footer-links a {
     color: #ccc;
     text-decoration: none;
     margin: 0 5px;
 }
-
 .footer-links a:hover {
     color: #e91e63;
 }
-
 /* Mobile */
 @media (max-width: 768px) {
     .subscribe-box {
         flex-direction: column;
     }
-
     .subscribe-input,
     .subscribe-btn {
         width: 100%;
     }
-
     .footer-bottom .d-flex {
         flex-direction: column;
         text-align: center;
     }
 }
-#price{
-color:#e91e63;
-font-size:22px;
-font-weight:bold;
-margin-top:10px;
+#price {
+    color: #e91e63;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
