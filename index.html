@@ -10,19 +10,23 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-<!--Navbar-->
+  <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
+
       <a class="navbar-brand logo" href="#">
         💄 Glamour
         <span>Beauty Parlour</span>
         <small>By Devi✨</small>
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
+
           <li class="nav-item">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -50,43 +54,43 @@
       </div>
     </div>
   </nav>
-<!--Hero-->
+  <!--Hero-->
   <section class="hero" id="home"></section>
   <!--about features-->
   <section id="about">
-  <div class="container">
-    <div class="row feature-box">
+    <div class="container">
+      <div class="row feature-box">
 
-      <div class="col-md-3">
-        <h5>Professional Staff</h5>
-        <p>Certified & Experienced</p>
-      </div>
+        <div class="col-md-3">
+          <h5>Professional Staff</h5>
+          <p>Certified & Experienced</p>
+        </div>
 
-      <div class="col-md-3">
-        <h5>Premium Products</h5>
-        <p>Top Quality Products</p>
-      </div>
+        <div class="col-md-3">
+          <h5>Premium Products</h5>
+          <p>Top Quality Products</p>
+        </div>
 
-      <div class="col-md-3">
-        <h5>Best Equipment</h5>
-        <p>Modern & Hygienic</p>
-      </div>
+        <div class="col-md-3">
+          <h5>Best Equipment</h5>
+          <p>Modern & Hygienic</p>
+        </div>
 
-      <div class="col-md-3">
-        <h5>Customer Satisfaction</h5>
-        <p>Our Top Priority</p>
+        <div class="col-md-3">
+          <h5>Customer Satisfaction</h5>
+          <p>Our Top Priority</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!--services Banner-->
+  </section>
+  <!--services Banner-->
   <section class="service-banner" id="services">
     <div class="banner-overlay">
       <h1>Our Services</h1>
       <p>Home / <span>Services</span></p>
     </div>
   </section>
-<!--service card-->
+  <!--service card-->
   <section class="services py-5">
     <div class="container">
       <div class="row g-4">
@@ -154,348 +158,369 @@
       <p>Home / <span>Appointment</span></p>
     </div>
   </section>
-    <section class="appointment-section">
-      <div class="container">
-        <div class="row appointment-box">
-          <div class="col-lg-12">
+  <section class="appointment-section">
+    <div class="container">
+      <div class="row appointment-box">
+        <div class="col-lg-12">
 
-            <div class="row">
-              <div class="col-md-12 mb-3">
-                <label>Full Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Enter your full name">
-              </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <label>Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+            </div>
 
-              <div class="col-md-6 mb-3">
-                <label>Phone Number</label>
-                <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
-              </div>
+            <div class="col-md-6 mb-3">
+              <label>Phone Number</label>
+              <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
+            </div>
 
-              <div class="col-md-6 mb-3">
-                <label>Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter your email">
-              </div>
+            <div class="col-md-6 mb-3">
+              <label>Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
 
-              <div class="col-md-6 mb-3">
-                <label>Select Service</label>
-                <select id="service" class="form-control" onchange="changerPrice()">
-                  <option>-- Select Service --</option>
-                  <option>Hair Cut & Styling</option>
-                  <option>Facial</option>
-                  <option>Bridal Makeup</option>
-                  <option>Hair Spa</option>
-                  <option>Manicure & Pedicure</option>
-                </select>
-                <h5 id="price" class="text-danger mt-2"></h5>
-              </div>
+            <div class="col-md-6 mb-3">
+              <label>Select Service</label>
+              <select id="service" class="form-control" onchange="changerPrice()">
+                <option>-- Select Service --</option>
+                <option>Hair Cut & Styling</option>
+                <option>Facial</option>
+                <option>Bridal Makeup</option>
+                <option>Hair Spa</option>
+                <option>Manicure & Pedicure</option>
+              </select>
+              <h5 id="price" class="text-danger mt-2"></h5>
+            </div>
 
-              <div class="col-md-6 mb-3">
-                <label>Date</label>
-                <input type="date" id="date" class="form-control">
-              </div>
+            <div class="col-md-6 mb-3">
+              <label>Date</label>
+              <input type="date" id="date" class="form-control">
+            </div>
 
-              <div class="col-md-6 mb-3">
-                <label>Time</label>
-                <select id="time" class="form-control">
-                  <option>-- Select Time --</option>
-                  <option>10:00 AM</option>
-                  <option>12:00 PM</option>
-                  <option>3:00 PM</option>
-                </select>
-              </div>
+            <div class="col-md-6 mb-3">
+              <label>Time</label>
+              <select id="time" class="form-control">
+                <option>-- Select Time --</option>
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>3:00 PM</option>
+              </select>
+            </div>
 
-              <div class="col-12 mb-3">
-                <label>Message</label>
-                <textarea id="message" class="form-control" rows="5"></textarea>
-              </div>
+            <div class="col-12 mb-3">
+              <label>Message</label>
+              <textarea id="message" class="form-control" rows="5"></textarea>
+            </div>
 
-              <div class="col-12">
-                <button onclick="bookNow()" class="btn btn-pink">
-                  BOOK NOW
-                </button>
-              </div>
+            <div class="col-12">
+              <button onclick="bookNow()" class="btn btn-pink">
+                BOOK NOW
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--gallery banner-->
-    <section class="service-banner" id="gallery">
-      <div class="banner-overlay">
-        <h1>Our Gallery</h1>
-        <p>Home / <span>Gallery</span></p>
+    </div>
+  </section>
+  <!--gallery banner-->
+  <section class="service-banner" id="gallery">
+    <div class="banner-overlay">
+      <h1>Our Gallery</h1>
+      <p>Home / <span>Gallery</span></p>
+    </div>
+  </section>
+  <!--gallery-->
+  <section class="gallery-section">
+  <div class="container">
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="makeup">MAKEUP</button>
+      <button class="filter-btn" data-filter="hair">HAIR STYLE</button>
+      <button class="filter-btn" data-filter="bridal">BRIDAL</button>
+      <button class="filter-btn" data-filter="nails">NAILS</button>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-6 col-md-3 gallery-item bridal">
+        <img src="Images/gallery1.jpeg" class="gallery-img">
       </div>
-    </section>
-    <!--gallery-->
-    <section class="gallery-section">
-      <div class="container">
-        <div class="filter-buttons">
-          <button class="filter-btn active">ALL</button>
-          <button class="filter-btn">MAKEUP</button>
-          <button class="filter-btn">HAIR STYLE</button>
-          <button class="filter-btn">BRIDAL</button>
-          <button class="filter-btn">NAILS</button>
-        </div>
 
-        <div class="row g-3">
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery1.jpeg" alt="Bridal look" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery2.jpeg" alt="Hair style" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery3.jpeg" alt="Eye makeup" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery4.jpeg" alt="Updo hairstyle" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery5.jpeg" alt="Facial treatment" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery6.jpeg" alt="Nail art" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery7.jpeg" alt="Smoky eye" class="gallery-img" />
-          </div>
-
-          <div class="col-6 col-md-3">
-            <img src="Images/gallery8.jpeg" alt="Skin care" class="gallery-img" />
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <a href="#" class="btn-pink">VIEW MORE</a>
-        </div>
+      <div class="col-6 col-md-3 gallery-item hair">
+        <img src="Images/gallery2.jpeg" class="gallery-img">
       </div>
-    </section>
-    <!--Testimonials-->
-    <section class="service-banner" id="Testimonials">
-      <div class="banner-overlay">
-        <h1>What Our Clients Say</h1>
-        <p>Home / <span>Testimoniais</span></p>
+
+      <div class="col-6 col-md-3 gallery-item makeup">
+        <img src="Images/gallery3.jpeg" class="gallery-img">
       </div>
-    </section>
-    <section class="testimonials-section">
-      <div class="container">
-        <div class="quote-mark">❝</div>
-        <div class="row g-4">
 
-          <!-- Card 1 -->
-          <div class="col-12 col-md-4">
-            <div class="testimonial-card">
-              <img src="Images/profile1.jpeg" alt="Priya Sharma" />
-              <p>Amazing service! Very professional and friendly staff. I loved the result.</p>
-              <div class="stars">★★★★★</div>
-              <div class="client-name">Priya Sharma</div>
-            </div>
+      <div class="col-6 col-md-3 gallery-item hair">
+        <img src="Images/gallery4.jpeg" class="gallery-img">
+      </div>
+
+      <div class="col-6 col-md-3 gallery-item makeup">
+        <img src="Images/gallery5.jpeg" class="gallery-img">
+      </div>
+
+      <div class="col-6 col-md-3 gallery-item nails">
+        <img src="Images/gallery6.jpeg" class="gallery-img">
+      </div>
+
+      <div class="col-6 col-md-3 gallery-item makeup">
+        <img src="Images/gallery7.jpeg" class="gallery-img">
+      </div>
+
+      <div class="col-6 col-md-3 gallery-item makeup">
+        <img src="Images/gallery8.jpeg" class="gallery-img">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <!--Testimonials-->
+  <section class="service-banner" id="Testimonials">
+    <div class="banner-overlay">
+      <h1>What Our Clients Say</h1>
+      <p>Home / <span>Testimoniais</span></p>
+    </div>
+  </section>
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="quote-mark">❝</div>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="testimonial-card">
+            <img src="Images/profile1.jpeg" alt="Priya Sharma" />
+            <p>Amazing service! Very professional and friendly staff. I loved the result.</p>
+            <div class="stars">★★★★★</div>
+            <div class="client-name">Priya Sharma</div>
           </div>
-
-          <!-- Card 2 -->
-          <div class="col-12 col-md-4">
-            <div class="testimonial-card">
-              <img src="Images/profile2.jpeg" alt="Ananya Reddy" />
-              <p>The best salon experience I have ever had!</p>
-              <div class="stars">★★★★★</div>
-              <div class="client-name">Ananya Reddy</div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-12 col-md-4">
-            <div class="testimonial-card">
-              <img src="Images/profile3.jpeg" alt="Sneha Patel" />
-              <p>Great ambiance and excellent services. Highly recommended!</p>
-              <div class="stars">★★★★★</div>
-              <div class="client-name">Sneha Patel</div>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Dots -->
-        <div class="dots">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="testimonial-card">
+            <img src="Images/profile2.jpeg" alt="Ananya Reddy" />
+            <p>The best salon experience I have ever had!</p>
+            <div class="stars">★★★★★</div>
+            <div class="client-name">Ananya Reddy</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="testimonial-card">
+            <img src="Images/profile3.jpeg" alt="Sneha Patel" />
+            <p>Great ambiance and excellent services. Highly recommended!</p>
+            <div class="stars">★★★★★</div>
+            <div class="client-name">Sneha Patel</div>
+          </div>
         </div>
 
       </div>
-    </section>
-    <!--footer-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row gy-4 align-items-start">
 
-          <!--Call Us -->
-          <div class="col-6 col-md-3">
-            <div class="footer-block">
-              <div class="footer-icon">📞</div>
-              <div>
-                <h6 class="footer-title">Call Us</h6>
-                <p class="footer-text">+91 98765 43210</p>
-              </div>
-            </div>
-          </div>
+      <!-- Dots -->
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
 
-          <!--Email Us -->
-          <div class="col-6 col-md-3">
-            <div class="footer-block">
-              <div class="footer-icon">✉️</div>
-              <div>
-                <h6 class="footer-title">Email Us</h6>
-                <p class="footer-text">info@glamour.com</p>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
+  <!--footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
 
-          <!--Location -->
-          <div class="col-6 col-md-3">
-            <div class="footer-block">
-              <div class="footer-icon">📍</div>
-              <div>
-                <h6 class="footer-title">Location</h6>
-                <p class="footer-text">123, Beauty Street,<br />Chennai-600001</p>
-              </div>
-            </div>
-          </div>
-
-          <!--Opening Hours -->
-          <div class="col-6 col-md-3">
-            <div class="footer-block">
-              <div class="footer-icon">🕐</div>
-              <div>
-                <h6 class="footer-title">Opening Hours</h6>
-                <p class="footer-text">Mon-Sat: 9.00 AM-8.00 PM<br />Sunday: 10.00 AM-6.00 PM</p>
-              </div>
+        <!--Call Us -->
+        <div class="col-6 col-md-3">
+          <div class="footer-block">
+            <div class="footer-icon">📞</div>
+            <div>
+              <h6 class="footer-title">Call Us</h6>
+              <p class="footer-text">+91 98765 43210</p>
             </div>
           </div>
         </div>
 
-        <hr class="footer-divider">
-        <div class="row gy-3 align-items-center">
-          <div class="col-12 col-md-6">
-            <h6 class="footer-title mb-2">Subscribe to our newsletter</h6>
-            <div class="subscribe-box">
-              <input type="email" placeholder="Enter your email" class="subscribe-input" />
-              <button class="subscribe-btn" onclick="subscribeNow()">SUBSCRIBE</button>
+        <!--Email Us -->
+        <div class="col-6 col-md-3">
+          <div class="footer-block">
+            <div class="footer-icon">✉️</div>
+            <div>
+              <h6 class="footer-title">Email Us</h6>
+              <p class="footer-text">info@glamour.com</p>
             </div>
           </div>
-          <!--follow us-->
-          <div class="icon-container">
-            <span><a href="https://www.facebook.com/devi.m.022007" target="_blank">
-                <i class="fa-brands fa-facebook text-primary"></i></a></span>
-            <span><a href="https://www.instagram.com/devi_m_022007" target="_blank">
-                <i class="fa-brands fa-instagram text-warning"></i></a></span>
-            <span><a href="https://X.com/" target="_blank"><i class="fa-brands fa-twitter text-primary"></i></a></span>
-            <span><a href="https://www.pinterest.com/devi_m_022007" target="_blank"><i
-                  class="fa-brands fa-pinterest text-danger"></i></a></span>
+        </div>
+
+        <!--Location -->
+        <div class="col-6 col-md-3">
+          <div class="footer-block">
+            <div class="footer-icon">📍</div>
+            <div>
+              <h6 class="footer-title">Location</h6>
+              <p class="footer-text">123, Beauty Street,<br />Chennai-600001</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Opening Hours -->
+        <div class="col-6 col-md-3">
+          <div class="footer-block">
+            <div class="footer-icon">🕐</div>
+            <div>
+              <h6 class="footer-title">Opening Hours</h6>
+              <p class="footer-text">Mon-Sat: 9.00 AM-8.00 PM<br />Sunday: 10.00 AM-6.00 PM</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-          <p class="footer-copy">© 2026 Glamour Beauty Parlour. All Rights Reserved.</p>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <span>|</span>
-            <a href="#">Terms & Conditions</a>
+
+      <hr class="footer-divider">
+      <div class="row gy-3 align-items-center">
+        <div class="col-12 col-md-6">
+          <h6 class="footer-title mb-2">Subscribe to our newsletter</h6>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Enter your email" class="subscribe-input" />
+            <button class="subscribe-btn" onclick="subscribeNow()">SUBSCRIBE</button>
           </div>
         </div>
+        <!--follow us-->
+        <div class="icon-container">
+          <span><a href="https://www.facebook.com/devi.m.022007" target="_blank">
+              <i class="fa-brands fa-facebook text-primary"></i></a></span>
+          <span><a href="https://www.instagram.com/devi_m_022007" target="_blank">
+              <i class="fa-brands fa-instagram text-warning"></i></a></span>
+          <span><a href="https://X.com/" target="_blank"><i class="fa-brands fa-twitter text-primary"></i></a></span>
+          <span><a href="https://www.pinterest.com/devi_m_022007" target="_blank"><i
+                class="fa-brands fa-pinterest text-danger"></i></a></span>
+        </div>
       </div>
-    </footer>
-    <script>
-    function subscribeNow(){
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <p class="footer-copy">© 2026 Glamour Beauty Parlour. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function subscribeNow() {
       let email = document.querySelector(".subscribe-input").value;
 
-    if(email==""){
+      if (email == "") {
         alert("Please enter your email!");
-    }
-    else{
+      }
+      else {
         alert("🎉 Successfully Subscribed! Thank you for subscribing.");
+      }
     }
+  </script>
+  <script>
+    function selectService(serviceName) {
+      document.getElementById("service").value = serviceName;
+      changerPrice();
+      document.getElementById("appointment").scrollIntoView({
+        behavior: "smooth"
+      });
     }
-</script>
-<script>
-function selectService(serviceName){
-  document.getElementById("service").value = serviceName;
-    changerPrice();
-    document.getElementById("appointment").scrollIntoView({
-        behavior:"smooth"
-    });
-}
-function changerPrice(){
-  let service = document.getElementById("service").value;
-    let price = "";
+    function changerPrice() {
+      let service = document.getElementById("service").value;
+      let price = "";
 
-    if(service == "Hair Cut & Styling"){
+      if (service == "Hair Cut & Styling") {
         price = "₹300";
-    }
-    else if(service == "Facial"){
+      }
+      else if (service == "Facial") {
         price = "₹800";
-    }
-    else if(service == "Bridal Makeup"){
+      }
+      else if (service == "Bridal Makeup") {
         price = "₹5000";
-    }
-    else if(service == "Hair Spa"){
+      }
+      else if (service == "Hair Spa") {
         price = "₹1200";
-    }
-    else if(service == "Manicure & Pedicure"){
+      }
+      else if (service == "Manicure & Pedicure") {
         price = "₹600";
+      }
+      document.getElementById("price").innerHTML =
+        "Price : " + price;
     }
-    document.getElementById("price").innerHTML = 
-    "Price : " + price;
-}
-function bookNow(){
+    function bookNow() {
 
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
-    let service = document.getElementById("service").value;
-    let date = document.getElementById("date").value;
-    let time = document.getElementById("time").value;
-    
-    if(name=="" || phone=="" || email=="" || 
-       service=="-- Select Service --" || date=="" ||
-       time=="-- Select Time --"){
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("phone").value;
+      let email = document.getElementById("email").value;
+      let service = document.getElementById("service").value;
+      let date = document.getElementById("date").value;
+      let time = document.getElementById("time").value;
+
+      if (name == "" || phone == "" || email == "" ||
+        service == "-- Select Service --" || date == "" ||
+        time == "-- Select Time --") {
         alert("Please fill all details!");
       }
       else {
 
-    let message = document.getElementById("message").value;
+        let message = document.getElementById("message").value;
 
-    emailjs.send("service_4m8sgds", "template_3phhyw9", {
-        name: name,
-        phone: phone,
-        email: email,
-        service: service,
-        date: date,
-        time: time,
-        message: message
-    })
-    .then(function () {
-        alert("🎉 Appointment Booked Successfully!");
-    })
-    .catch(function (error) {
-        alert("Error: " + JSON.stringify(error));
-        console.log(error);
-    });
-}
-}
-</script>
-<script>
-(function () {
-    emailjs.init({
+        emailjs.send("service_4m8sgds", "template_3phhyw9", {
+          name: name,
+          phone: phone,
+          email: email,
+          service: service,
+          date: date,
+          time: time,
+          message: message
+        })
+          .then(function () {
+            alert("🎉 Appointment Booked Successfully!");
+          })
+          .catch(function (error) {
+            alert("Error: " + JSON.stringify(error));
+            console.log(error);
+          });
+      }
+    }
+  </script>
+  <script>
+    (function () {
+      emailjs.init({
         publicKey: "zf2UmNUiKjBqUAdQU"
+      });
+    })();
+  </script>
+  <script>
+  const buttons = document.querySelectorAll(".filter-btn");
+const items = document.querySelectorAll(".gallery-item");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    let filter = btn.getAttribute("data-filter");
+
+    items.forEach(item => {
+
+      if(filter === "all" || item.classList.contains(filter)){
+        item.style.display = "block";
+      }
+      else{
+        item.style.display = "none";
+      }
     });
-})();
+  });
+});
 </script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
